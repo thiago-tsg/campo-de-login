@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login</title>
+    <link rel="stylesheet" href="estilos/stylos.css">
+    <link rel="stylesheet" href="estilos/mq.css">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+</head>
+<body>
+    <main>
+        <section id="login">
+            <div id="img">
+                <!--Aqui fica a Imagem-->
+            </div>
+            <div id="formulario">
+                <h1>Login</h1>
+                <p>Seja bem-vindo(a) novamente. Faça login para acessar sua conta em nosso site</p>
+                <form action="login.php" method="post" autocomplete="on">
+
+                    <!--login-->
+                    <div class="campo">
+                        <span class="material-icons"> login</span>                        
+                        <input type="email" name="login" id="ilogin" placeholder="seu e-mail" autocomplete="on" required maxlength="30">
+                        <label for="ilogin">Login</label>    
+                    </div>
+
+                    <!--senha-->
+                    <div class="campo">
+                        <span class="material-icons"> lock</span>
+                        <input type="password" name="senha" id="isenha" placeholder="sua senha" autocomplete="current-password" required minlength="8" maxlength="20">
+                        <label for="isenha">Senha</label>
+                    </div>
+
+                    <input type="submit" value="entrar" id="entrar">
+
+                    <a href="esqueci.html" id="botao">
+                        Esqueci a senha <span class="material-icons">mail</span>
+                    </a>
+                </form>
+            </div>
+
+        </section>
+    </main>
+    
+</body>
+</html>
